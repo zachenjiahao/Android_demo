@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.Fragment_2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="537dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.5"
+        android:src="@drawable/background_4"
+        android:translationZ="0.5dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_width="65dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/til_search_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_search_bar_1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="75dp"
+            android:maxLines="1"
+            app:layout_constraintRight_toLeftOf="@+id/search_button"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请问您哪里不舒服?"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_search_bar_1">
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:minHeight="640dp"
+                >
+
+                <!--            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/til_search_bar_1" >
+                                <TableRow android:layout_marginVertical="5dp">
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="累计境外输入："
+                                        android:textSize="18dp"/>
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/shuru"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:textSize="18dp"/>
+                                </TableRow>
+
+                            </TableLayout>-->
+                <!--            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/crv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">-->
+                <TextView
+                    android:id="@+id/illness_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+                <!--            </androidx.recyclerview.widget.RecyclerView>-->
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

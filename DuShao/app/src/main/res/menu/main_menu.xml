@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/f1"
+        android:title="疫情动态"
+        android:icon="@drawable/crime"/>
+    <item
+        android:id="@+id/f2"
+        android:title="医院科室"
+        android:icon="@drawable/client"/>
+    <item
+        android:id="@+id/f3"
+        android:title="智能诊疗"
+        android:icon="@drawable/hospital"/>
+    <item
+        android:id="@+id/f4"
+        android:title="个人中心"
+        android:icon="@drawable/person"/>
+</menu>
